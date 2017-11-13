@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>元素周期表</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    body{
+      background-color: #eee;
+    }
+    .box{
+      width: 900px;
+      height: 450px;
+      position: relative;
+      margin: 50px auto;
+      transform-style:preserve-3d;
+      transform-origin: 50%;
+      /*animation: run 3s linear alternate;*/
+    }
+    /*@keyframes run{
+      from{
+        transform: rotateY(45deg);
+      }
+      to{
+        transform: rotateY(360deg);
+      }
+    }*/
+    .box>div{
+        width:100%;
+        height:100%;
+        position:absolute;
+        /*top:0;
+        left:0;*/
+        opacity:0.5;
+    }
+    li{
+      width:50px;
+      height: 50px;
+      float: left;
+      position:relative;
+      /*top:0;
+      left:0;*/
+      border:1px solid #fff;
+      box-sizing:border-box;
+      color:#eee;
+      text-align: center;
+    }
+    .row01 li:last-child{
+      float: right;
+    }
+    .row02 li:nth-child(n+3),
+    .row03 li:nth-child(n+3){
+      float:right;
+    }
+    .row08{
+      margin-left: 100px;
+    }
+    .row09{
+      margin-left: 100px;
+    }
+    .row01{
+      animation: row01 3s linear 0.2s;
+    }
+    .row02{
+      animation: row02 3s linear 0.3s;
+    }
+    .row03{
+      animation: row03 3s linear 0.4s;
+    }
+    .row04{
+      animation: row04 3s linear 0.5s;
+    }
+    .row05{
+      animation: row05 3s linear 0.6s;
+    }
+    .row06{
+      animation: row06 3s linear 0.7s;
+    }
+    .row07{
+      animation: row07 3s linear 0.8s;
+    }
+    .row08{
+      animation: row08 3s linear 0.9s;
+    }
+    .row09{
+      animation: row09 3s linear 1s;
+    }
+    @keyframes row01{
+      from{
+        transform: rotateY(0deg) translateX(360px) translateY(360px) translateZ(360px);
+      }
+      to{
+        transform: rotateY(360deg) translateX(0px) translateY(0px) translateZ(0px);
+      }
+    }
+    @keyframes row02{
+      from{
+        transform: rotateY(40deg) translateX(360px) translateY(360px)  translateZ(360px);
+      }
+      to{
+        transform: rotateY(360deg) translateX(0px) translateY(0px) translateZ(0px);
+      }
+    }
+    @keyframes row03{
+      from{
+        transform: rotateY(50deg) translateZ(360px);
+      }
+      to{
+        transform: rotateY(360deg) translateZ(0px);
+      }
+    }
+    @keyframes row04{
+      from{
+        transform: rotateY(50deg) translateZ(360px);
+      }
+      to{
+        transform: rotateY(360deg) translateZ(0px);
+      }
+    }
+    @keyframes row05{
+      from{
+        transform: rotateY(50deg) translateZ(360px);
+      }
+      to{
+        transform: rotateY(360deg) translateZ(0px);
+      }
+    }
+    @keyframes row06{
+      from{
+        transform: rotateY(50deg) translateZ(360px);
+      }
+      to{
+        transform: rotateY(360deg) translateZ(0px);
+      }
+    }
+    @keyframes row07{
+      from{
+        transform: rotateY(50deg) translateZ(360px);
+      }
+      to{
+        transform: rotateY(360deg) translateZ(0px);
+      }
+    }
+    @keyframes row08{
+      from{
+        transform: rotateY(50deg) translateZ(360px);
+      }
+      to{
+        transform: rotateY(360deg) translateZ(0px);
+      }
+    }
+    @keyframes row09{
+      from{
+        transform: rotateY(50deg) translateZ(360px);
+      }
+      to{
+        transform: rotateY(360deg) translateZ(0px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="row01">
+      <ul>
+        <li>H</li>
+        <li>He</li>
+      </ul>
+    </div>
+    <div class="row02">
+      <ul>
+        <li>Li</li>
+        <li>Be</li>
+        <li>B</li>
+        <li>C</li>
+        <li>N</li>
+        <li>O</li>
+        <li>F</li>
+        <li>Ne</li>
+      </ul>
+    </div>
+    <div class="row03">
+      <ul>
+        <li>Na</li>
+        <li>Mg</li>
+        <li>Al</li>
+        <li>Si</li>
+        <li>P</li>
+        <li>S</li>
+        <li>Cl</li>
+        <li>Ar</li>
+      </ul>
+    </div>
+    <div class="row04">
+      <ul>
+        <li>K</li>
+        <li>Ca</li>
+        <li>Sc</li>
+        <li>Ti</li>
+        <li>V</li>
+        <li>Cr</li>
+        <li>Mn</li>
+        <li>Fe</li>
+        <li>Co</li>
+        <li>Ni</li>
+        <li>Cu</li>
+        <li>Zn</li>
+        <li>Ga</li>
+        <li>Ge</li>
+        <li>As</li>
+        <li>Se</li>
+        <li>Br</li>
+        <li>Kr</li>
+      </ul>
+    </div>
+    <div class="row05">
+        <ul>
+        <li>Rb</li>
+        <li>Sr</li>
+        <li>Y</li>
+        <li>Zr</li>
+        <li>Nb</li>
+        <li>Mo</li>
+        <li>Tc</li>
+        <li>Ru</li>
+        <li>Rh</li>
+        <li>Pd</li>
+        <li>Ag</li>
+        <li>Cd</li>
+        <li>In</li>
+        <li>Sn</li>
+        <li>Sb</li>
+        <li>Te</li>
+        <li>I</li>
+        <li>Xe</li>
+      </ul>
+    </div>
+    <div class="row06">
+        <ul>
+        <li>Cs</li>
+        <li>ba</li>
+        <li>Lu</li>
+        <li>Hf</li>
+        <li>Ta</li>
+        <li>W</li>
+        <li>Re</li>
+        <li>Os</li>
+        <li>Ir</li>
+        <li>Pt</li>
+        <li>Au</li>
+        <li>Hg</li>
+        <li>Tl</li>
+        <li>Pb</li>
+        <li>Bi</li>
+        <li>Po</li>
+        <li>At</li>
+        <li>Rn</li>
+      </ul>
+    </div>
+    <div class="row07">
+      <ul>
+        <li>Fr</li>
+        <li>Ra</li>
+        <li>Lr</li>
+        <li>Rf</li>
+        <li>Db</li>
+        <li>Sg</li>
+        <li>Bh</li>
+        <li>Hs</li>
+        <li>Mt</li>
+        <li>Ds</li>
+        <li>Rg</li>
+        <li>Cn</li>
+        <li>Uut</li>
+        <li>Fl</li>
+        <li>Uup</li>
+        <li>Lv</li>
+        <li>Uus</li>
+        <li>Uuo</li>
+      </ul>
+    </div>
+    <div class="row08">
+      <ul>
+        <li>La</li>
+        <li>Ce</li>
+        <li>Pr</li>
+        <li>Nd</li>
+        <li>Pm</li>
+        <li>Sm</li>
+        <li>Eu</li>
+        <li>Gd</li>
+        <li>Tb</li>
+        <li>Dy</li>
+        <li>Ho</li>
+        <li>Er</li>
+        <li>Tm</li>
+        <li>Yb</li>
+      </ul>
+    </div>
+    <div class="row09">
+      <ul>
+        <li>Ac</li>
+        <li>Th</li>
+        <li>Pa</li>
+        <li>U</li>
+        <li>Np</li>
+        <li>pu</li>
+        <li>Am</li>
+        <li>Cm</li>
+        <li>Bk</li>
+        <li>Cf</li>
+        <li>Es</li>
+        <li>Fm</li>
+        <li>Md</li>
+        <li>No</li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="jquery-1.12.4.js"></script>
+<script>
+  $(function() {
+    $(".box>div").each(function(index,item){
+      $(item).css({"top":index*50,"left":0});
+    })
+    var loader = [];
+    var arr = [];
+    for(var i = 0;i<118;i++){
+      loader.push(parseInt(Math.random()*500));
+      arr.push('rgb('+parseInt(255*Math.random())+','+parseInt(255*Math.random())+','+parseInt(255*Math.random())+')');
+    }
+    $("li").each(function(index,item){
+      $(item).css({"top":loader[index],"left":loader[index]});
+      $(item).css("backgroundColor", arr[index]);
+    })
+    $("li").each(function(index,item){
+      $(item).animate({"left":0,"top":0},3000);
+    })
+  })
+</script>
+</html>
